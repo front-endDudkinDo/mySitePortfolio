@@ -1,0 +1,231 @@
+@media (max-width: 1152px){
+    /* about us */
+    .about_us_row{
+        flex-direction: column;
+    }
+    .about_us_description{
+        margin-top: 220px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 1106px){
+    /* first screen */
+    .description_shop{
+        margin-top: 42px;
+    }
+    .first_screen_img{
+        margin-left: 0;
+    }
+   
+}
+@media (max-width: 893px){
+    /* take food */
+    .take_food_description{
+        margin-top: 20px;
+    }
+    .smartphone{
+        margin-top: 42px;
+    }
+    /* testimonials */
+    .testimonials{
+        margin-top: 376px;
+    }
+}
+@media (max-width: 768px){
+    /* navbar */
+    .menu_burger{
+        display: block;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        width: 35px;
+        height: 35px;
+        border: solid 2px #000000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        z-index: 5;
+    }
+    .menu_burger_icon{
+        display: block;
+        position: relative;
+        width: 16px;
+        height: 2px;
+        background-color: #ff9900;
+        transition: ease 1s;
+    }
+    .menu_burger_icon::before,
+    .menu_burger_icon::after{
+        display: block;
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 2px;
+        background-color: #ff9900;
+        transition: ease 1s;
+    }
+    .menu_burger_icon::before{
+        top: -7px;
+        left: 0;
+    }
+    .menu_burger_icon::after{
+        top: 7px;
+        left: 0;
+    }
+    .menu_burger_icon.active{
+        background-color: transparent;
+    }
+    .menu_burger_icon.active::before{
+        top: 0;
+        transform: rotate(46deg);
+        transition: ease 1s;
+    }
+    .menu_burger_icon.active::after{
+        top: 0;
+        transform: rotate(-46deg);
+        transition: ease 1s;
+    }
+    .booking_link{
+        margin-left: 15px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu_mobile{
+        display: block;
+        width: 100%;
+        height: 180px;
+        background-color: #f1e6d5;
+        margin-bottom: 30px;
+        margin-top: -208px;
+        transition: ease 2s;
+        transition-delay: 1s;
+    }
+    .menu_mobile.menu_mobile_active{
+        margin-top: 0;
+        transition: ease 2s;
+        transition-delay: 1s;
+    }
+    .menu_mobile li{
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    .menu_mobile li:first-child{
+        padding-top: 15px;
+    }
+    .menu_mobile li:last-child{
+        margin-bottom: 0;
+    }
+    .menu_mobile a{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #150C01;
+    }
+    .first_screen,.features,.about_us,.food_menu,.take_food,.testimonials{
+        padding: 50px 0;
+    }
+    /* first screen */
+    .first_screen_img img{
+        display: block;
+        margin-top: 42px;
+    }
+    /* Features */
+    .list_features{
+        margin-top: 0;
+        justify-content: center;
+    }
+    .feature{
+        margin-top: 24px;
+    }
+    /* take food */
+    .take_food{
+        min-height: 800px;
+    }
+    /* testimonials */
+    .left_arrow_slider{
+        top: 60%;
+        left: 0;
+        transform: translateY(-60%);
+    }
+    .right_arrow_slider{
+        top: 60%;
+        right:  0;
+        transform: translateY(-60%);
+    }
+    /* contact */
+    .contact{
+        padding-top: 40px;
+    }
+    .flex_container_for_input{
+        display: block;
+    }
+    .flex_container_for_input .message_input_field{
+        max-width: 100%;
+    }
+    .flex_container_for_input .submit_message{
+        margin-top: 20px;
+        width: 100%;
+    }
+    /* footer */
+    .footer_content{
+        flex-direction: column;
+    }
+    .footer_contact{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .nav_list h3,.nav_list li{
+        text-align: center;
+    }
+    .nav_list li:last-child{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 425px){
+    /* first screen */
+    .description_shop .description_shop_title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .description_shop a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .margin_left{
+        margin-left: 0;
+    }
+    .description_shop .food_details{
+        margin-left: 0;
+    }
+    .title_section{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    /* food menu */
+    .food_list{
+        grid-template-columns: repeat(auto-fill, 290px);
+    }
+    .food_link{
+        max-width: 290px;
+    }
+     /* take food */
+     .download_annexes_buttons .google_play{
+         display: block;
+         margin-top: 42px;
+         margin-left: 0;
+     }
+       /* testimonials */
+    
+}
