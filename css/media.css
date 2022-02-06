@@ -70,6 +70,15 @@
     .first_screen_container p{
         text-align: center;
     }
+    /* works */
+    .works_container .card_work .rgba h3{
+        font-size: 18px;
+        padding-top: 15px;
+    }
+    .works_container .card_work .rgba p{
+        font-size: 16px;
+        padding: 5px 5px 0px 5px;
+    }
     /* footer */
     .footer_content{
         flex-direction: column;

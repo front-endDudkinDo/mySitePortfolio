@@ -1,0 +1,218 @@
+@media (max-width: 1115px){
+    /* founder */
+    /* .users_cards{
+        
+    } */
+    
+    .user_card:nth-child(2){
+        transform: translateY(30px);
+    }
+    .user_card:nth-child(3){
+        transform: translateY(60px);
+    }
+    .user_card:nth-child(4){
+        transform: translateY(90px);
+    }
+    /* reviews */
+    .slider{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 900px){
+    /* navbar */
+    .navbar_content{
+        justify-content: start;
+    }
+    .menu{
+        display: none;
+    }
+    .contact_button{
+        margin-left: 10px;
+    }
+    .menu_burger{
+        display: block;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        width: 35px;
+        height: 35px;
+        border: solid 2px #4080BF;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .menu_burger_icon{
+        display: block;
+        position: relative;
+        width: 16px;
+        height: 2px;
+        background-color: #ffffff;
+        transition: ease 1s;
+    }
+    .menu_burger_icon::before,
+    .menu_burger_icon::after{
+        display: block;
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 2px;
+        background-color: #ffffff;
+        transition: ease 1s;
+    }
+    .menu_burger_icon::before{
+        top: -7px;
+        left: 0;
+    }
+    .menu_burger_icon::after{
+        top: 7px;
+        left: 0;
+    }
+    .menu_burger_icon.active{
+        background-color: transparent;
+    }
+    .menu_burger_icon.active::before{
+        top: 0;
+        transform: rotate(46deg);
+        transition: ease 1s;
+    }
+    .menu_burger_icon.active::after{
+        top: 0;
+        transform: rotate(-46deg);
+        transition: ease 1s;
+    }
+    .menu_mobile{
+        display: block;
+        width: 100%;
+        height: 220px;
+        background-color: #285a8b;
+        margin-top: -220px;
+        transition: ease 2s;
+        transition-delay: 1s;
+        
+    } 
+      .menu_mobile li{
+          padding-top: 15px;
+          margin-left: 15px;
+      }
+      .menu_mobile a {
+        position: relative;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+      }
+      .menu_mobile a::before {
+        content: "";
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        background-color: #FFFFFF;
+        -webkit-transition: ease 1s;
+        transition: ease 1s;
+      }
+      
+      .menu_mobile a:hover::before {
+        width: 100%;
+      }
+      .menu_mobile_active{
+          margin-top: 0;
+      }
+      .screen_first,.about_sakaagency,.specialization,.projects,.founder,.reviews{
+          padding-bottom: 50px;
+      }
+      /* screen first */
+      .digital_agency_content{
+          margin-left: 15px;
+      }
+      .digital_agency_description .digital_agency_content .digital_agency_title{
+            font-size: 32px;
+            line-height: 45px;
+      }
+      .digital_agency_description .digital_agency_content .digital_agency_text{
+          margin-top: 15px;
+          margin-bottom: 15px;
+      }
+      /* contact*/
+      .benefit{
+          margin-top: 15px;
+      }
+      .benefit:first-child{
+          margin-top: 0;
+      }
+}
+@media (max-width: 716px){
+    /* specialization */
+    .specialization_cards{
+        justify-content: center;
+    }
+    /* footer */
+    .footer_flex_container{
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .footer_flex_container > *:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .copywriting,.social_icons{
+       margin: 0 auto;
+    }
+    .links_footer{
+        display: block;
+        text-align: center;
+    }
+    .first_column{
+        margin-right: 0;
+    }
+    .message_about_error{
+       margin: 0 auto;
+    }
+}
+@media (max-width: 555px){
+    /* navbar */
+    .navbar_content{
+        display: block;
+    }
+    .contact_button{
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    .section_title{
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 45px;
+        color: #FFFFFF;
+    }
+    /* about sakaagency */
+    .services_card_text h3{
+        font-size: 18px;
+        line-height: 25px;
+    }
+     /* founder */
+     .user_card{
+         flex-direction: column;
+     }
+     .user_card .first_user,.user_card .third_user{
+         order: 1;
+         max-width: 400px;
+         text-align: center;
+         margin: 0;
+         margin-top: 15px;
+     }
+     .user_card .second_user,.user_card .info_about_user{
+        max-width: 400px;
+        text-align: center;
+        margin: 0;
+        margin-top: 15px;
+     }
+}
