@@ -608,6 +608,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 .benefits_list .benefit {
