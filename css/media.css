@@ -28,6 +28,14 @@
         line-height: 30px;
         padding-bottom: 18px;
     }
+    /* skills */
+    .skills_container{
+        display: block;
+        max-width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+    }
     /* works */
     .works_container{
         justify-content: center;
@@ -71,6 +79,9 @@
         text-align: center;
     }
     /* works */
+    .works_container .link_on_work{
+        height: 320px;
+    }
     .works_container .card_work .rgba h3{
         font-size: 18px;
         padding-top: 15px;
@@ -82,6 +93,15 @@
     /* footer */
     .footer_content{
         flex-direction: column;
+    }
+    .info_contact LI{
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 30px;
+        padding-top:  15px;
+    }
+    .info_contact .mail::before{
+        top: 20px;
     }
     .vk_icon{
         display: block;

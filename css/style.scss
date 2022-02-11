@@ -22,13 +22,16 @@ a{
     text-decoration: none;
 }
 // add fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 
 // body
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
@@ -38,26 +41,23 @@ body{
     box-sizing: content-box;
     padding: 0 15px;
 }
-.mask{
+// .........navbar.................
+.header{
     width: 100%;
     height: 800px;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 0;
-    z-index: 5;
+    background: url("../images/img-first-screen-mocap.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-// .........navbar.................
-.navbar,.first_screen_container{
-    position: relative;
-    z-index: 10;
-}
-.menu{
+.navbar{
     min-height: 100px;
     display: flex;
     align-items: center;
-
+}
+.menu{
     ul{
         display: flex;
+        margin-left: 15px;
     }
     li{
         margin-right: 40px;
@@ -68,6 +68,7 @@ body{
     a{
         position: relative;
         font-size: 20px;
+        font-weight: 500px;
         line-height: 30px;
         color: #ffffff;
         &::before{
@@ -85,37 +86,22 @@ body{
         }
     }
 }
-.block{
-    width: 100%;
-    height: 700px;
-    background-color: transparent;
-}
-// ........first screen.....
-.first_screen{
-    width: 100%;
-    height: 800px;
-    background: url("../images/img-first-screen-mocap.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-}
 .first_screen_container{
-    min-height: 690px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     h1{
-        font-weight: 800;
-        font-size: 40px;
+        font-family: 'Lobster', cursive;
+        font-weight: 400;
+        font-size: 60px;
         line-height: 50px;
         color: #ffffff;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
     p{
-        font-weight: 500;
+        font-family: 'Lobster', cursive;
         font-size: 20px;
         line-height: 30px;
         color: #ffffff;
@@ -124,6 +110,7 @@ body{
     }
     a{
         font-size: 20px;
+        font-weight: 500;
         line-height: 30px;
         color: #ffffff;
         background-color: transparent;
@@ -146,7 +133,7 @@ body{
     font-weight: 400;
     font-size: 40px;
     line-height: 30px;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
 }
 // ....skills......
@@ -154,8 +141,7 @@ body{
     position: relative;
     width: 100%;
     min-height: 100px;
-    background-color: #f5f5f5;
-    border-bottom: solid 5px #cccccc;
+    background-color: #272626;
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -166,6 +152,7 @@ body{
     justify-content: start;
     column-gap: 15px;
     .html{
+        max-width: 240px;
         display: flex;
         position: relative;
         &:hover .hover_html{
@@ -187,7 +174,7 @@ body{
             transition: ease 1s;
             transform: scale(0);
             h3{
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 18px;
                 line-height: 20px;
                 color: #000000;
@@ -197,6 +184,7 @@ body{
             }
             p{
                 font-size: 20px;
+                font-weight: 600;
                 line-height: 30px;
                 color: #000000;
                 text-align: center;
@@ -205,6 +193,7 @@ body{
         }
     }
     .css{
+        max-width: 240px;
         display: flex;
          position: relative;
         &:hover .hover_css{
@@ -225,7 +214,7 @@ body{
             transition: ease 1s;
             transform: scale(0);
             h3{
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 18px;
                 line-height: 20px;
                 color: #FFFFFF;
@@ -235,6 +224,7 @@ body{
             }
             p{
                 font-size: 20px;
+                font-weight: 60;
                 line-height: 30px;
                 color: #FFFFFF;
                 text-align: center;
@@ -243,6 +233,7 @@ body{
         }
     }
     .js{
+        max-width: 240px;
         display: flex;
         position: relative;
         &:hover .hover_js{
@@ -263,7 +254,7 @@ body{
             transition: ease 1s;
             transform: scale(0);
             h3{
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 18px;
                 line-height: 20px;
                 color: #000000;
@@ -273,6 +264,7 @@ body{
             }
             p{
                 font-size: 20px;
+                font-weight: 600;
                 line-height: 30px;
                 color: #000000;
                 text-align: center;
@@ -285,8 +277,7 @@ body{
 .works{
     width: 100%;
     min-height: 100px;
-    background-color: #faf9f9;
-    border-bottom: solid 5px #cccccc;
+    background-color: #353333;
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -299,119 +290,108 @@ body{
         position: relative;
         display: inline-block;
         width: 439px;
-        height: auto;
+        height: 390px;
         background-color: transparent;
-        &:hover .rgba{
-            transform: scale(1);
-        }
-        &:hover img{
-            max-width: 100%;
-            height: 100%;
-            margin: 0;
-            padding-top: 0;
-        }
-    }
-    .card_work{
-        width: 100%;
-        height: 100%;
-        border: solid 2px #000000;
-        // background-color: #000000;
-        transition: ease 1s;
-        img{
-            max-width: 98%;
-            height: 98%;
-            display: block;
-            margin-left: 0;
-            margin-right: 0;
-            margin: 0 auto;
-            padding-top: 4px;
-            transition: ease 1s;
-        }
-        .rgba{
+        .card_work{
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0,0.8);
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: scale(0);
+            background-color: #272626;
             transition: ease 1s;
+            img{
+                max-width: 90%;
+                object-fit: contain;
+                display: block;
+                margin-left: 0;
+                margin-right: 0;
+                margin: 0 auto;
+                padding-top: 5px;
+                transform: translateY(40%);
+                transition: ease 1s;
+            }
             h3{
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 20px;
-                color: #ffffff;
+                color: #272626;
                 text-align: center;
                 text-transform: uppercase;
                 padding-top: 20px;
-                transition: ease 1s;
+                transition: ease 200ms;
+                transition-delay: 1ms;
             }
             p{
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 18px;
-                color: #ffffff;
+                color: #272626;
                 text-align: center;
                 letter-spacing: 5px;
                 padding: 15px 15px 0px 15px;
-                transition: ease 1s;
+                transition: ease 200ms;
+                transition-delay: 1ms;
             }
+        }
+        &:hover .card_work{
+            box-shadow: 0 0 5px 2px #ffa500;	
+        }
+        &:hover img{
+            transform: translateY(0%);
+        }
+        &:hover h3{
+            color: #f1c063;
+        }
+        &:hover p{
+            color: #f1c063;
         }
     }
 }
 // ....footer.......
 .basement{
     width: 100%;
-    min-height: 140px;
+    min-height: 100px;
     background-color: #000000;
 }
 .footer_content{
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
-    min-height: 120px;
     align-items: center;
 }
 .info_contact{
     position: relative;
-    h3{
-        font-weight: 500;
-        font-size: 24px;
-        color: #ECF0F1;
-        vertical-align: text-top;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-left: 48px;
-    }
-    p{
+    LI{
+        font-weight: 400;
         font-size: 18px;
         color: #ECF0F1;
         margin-left: 48px;
-        &::before{
-            content: "";
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            background: url("../icons/icon-mail.png") no-repeat;
-            background-size: contain;
-            position: absolute;
-            top: 52px;
-            left: 0;
-        }
+    }
+    .mail::before{
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url("../icons/icon-mail.png") no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 5px;
+        left: 0px;
     }
 }
 .social{
-    h3{
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 24px;
-        color: #ECF0F1;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+    margin-top: 30px;
     .link_vk{
+        position: relative;
+        display: inline-block;
         width: 24px;
         height: 24px;
+        background-color: #353333;
+        border-radius: 50%;
+        padding: 24px;
         .vk_icon{
             width: 24px;
             height: 24px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
     }
 }

@@ -16,9 +16,12 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="navbar">
+                <a href="#" class="logo_link">
+                    <img src="./icons/logo.png" alt="logo" class="logo">
+                </a>
                 <nav class="menu">
                     <ul>
                         <li><a href="#skills">Навыки</a></li>
@@ -28,10 +31,7 @@
                 </nav>
             </div>
         </div>
-    </header>
-    <main>
-        <div class="block"></div>
-        <section class="first_screen">
+        <div class="first_screen">
             <div class="container">
                 <div class="first_screen_container">
                     <h1>Быстро Дёшево Качественно</h1>
@@ -39,8 +39,9 @@
                     <a href="https://vk.me/andrey_dudkin" target="_blank">Заказать</a>
                 </div>
             </div>
-        </section>
-       <div class="mask"></div>
+        </div>
+    </header>
+    <main>
        <section id="skills" class="skills">
             <div class="container">
                 <h2 class="section_title">Навыки</h2>
@@ -76,10 +77,8 @@
                     <a href="./foodNetwork/index.html" class="link_on_work" target="_blank">
                         <div class="card_work">
                             <img src="./images/work-cover-first.jpg" alt="cover work">
-                            <div class="rgba">
-                                 <h3>food network</h3>
-                                <p>Адаптивный сайт, ресторан быстрого писания.</p>
-                            </div>
+                            <h3>food network</h3>
+                            <p>Адаптивный сайт, ресторан быстрого писания.</p>
                         </div>
                     </a>
                     <a href="./sakaAgency/index.html" class="link_on_work" target="_blank">
@@ -99,11 +98,11 @@
         <div class="container">
             <div class="footer_content">
                 <div class="info_contact">
-                    <h3>Контактная информация</h3>
-                    <p>andrey.dudkin.do@gmail.com</p>
+                    <ul>
+                        <li class="mail">andrey.dudkin.do@gmail.com</li>
+                    </ul>
                 </div>
                 <div class="social">
-                    <h3>Соц-сети</h3>
                     <a href="https://vk.com/andrey_dudkin" target="_blank" class="link_vk">
                         <img src="./icons/icon-vk.png" alt="icon-vk" class="vk_icon">
                     </a>
