@@ -368,6 +368,7 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  row-gap: 25px;
 }
 
 .works_container .link_on_work {
